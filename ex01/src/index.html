@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Gallery's page</title>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img class="image" src="../images/img1.jpg" alt="Marathon" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(1)">
+                <h1>Marathon</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img5.jpg" alt="Weight Lifting" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(5)">
+                <h1>Weight Lifting</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img8.jpg" alt="Jogging" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(8)">
+                <h1>Jogging</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="image" src="../images/img2.jpg" alt="Gymnastics" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(2)">
+                <h1>Gymnastics</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img6.jpg" alt="Basketball" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(6)">
+                <h1>Basketball</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="image" src="../images/img3.jpg" alt="Climbing" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(3)">
+                <h1>Climbing</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img7.jpg" alt="Swimming" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(7)">
+                <h1>Swimming</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img9.jpg" alt="Running" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(9)">
+                <h1>Running</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="image" src="../images/img4.jpg" alt="Skiing" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(4)">
+                <h1>Skiing</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img class="image" src="../images/img10.jpg" alt="Cycling" />
+            <div class="middle">
+              <div class="text" onclick="openModal();currentSlide(10)">
+                <h1>Cycling</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image01.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image02.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image03.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image04.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image05.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image06.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image07.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image08.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image09.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <iframe src="image10.html" frameborder="0"></iframe>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls
+    <div class="column">
+      <img class="demo" src="../images/img1.jpg" onclick="currentSlide(1)" alt="Marathon">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../images/img2.jpg" onclick="currentSlide(2)" alt="Gymnastics">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../images/img3.jpg" onclick="currentSlide(3)" alt="Climbing">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../images/img4.jpg" onclick="currentSlide(4)" alt="Skiing">
+    </div>
+  </div>
+</div> 
+  </div>
+</div>  -->
+<script src="../scripts/index.js"></script>
+</body>
+</html>
